@@ -9,7 +9,7 @@ use Igorgawrys\Social\Auth\EloquentSocialUserProvider;
 use Igorgawrys\Social\Guard\SocialGuard;
 use Igorgawrys\Social\Hashing\SocialHasher;
 
-class SocialServiceProvider extends ServiceProvider
+class SocialAuthServiceProvider extends ServiceProvider
 {
      /**
      * Indicates if loading of the provider is deferred.
