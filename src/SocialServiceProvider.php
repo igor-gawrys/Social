@@ -9,7 +9,7 @@ use Igorgawrys\Social\Auth\EloquentSocialUserProvider;
 use Igorgawrys\Social\Guard\SocialGuard;
 use Igorgawrys\Social\Hashing\SocialHasher;
 
-class SocialAuthServiceProvider extends ServiceProvider
+class SocialServiceProvider extends ServiceProvider
 {
      /**
      * Indicates if loading of the provider is deferred.
@@ -45,9 +45,9 @@ class SocialAuthServiceProvider extends ServiceProvider
             );
         });
 
-        $this->app->singleton('social-auth', function ($app) {
-            $iteration_count = $app['config']->get('social-auth.hash.iteration_count');
-            $portable_hashes = $app['config']->get('social-auth.hash.portable_hashes');
+        $this->app->singleton('social', function ($app) {
+            $iteration_count = $app['config']->get('social.hash.iteration_count');
+            $portable_hashes = $app['config']->get('social.hash.portable_hashes');
             $hasher = new PasswordHash($iteration_count, $portable_hashes);
             return new SocialHasher($hasher);
         });
