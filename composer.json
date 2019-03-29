@@ -19,7 +19,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Igorgawrys\\Social\\": "src/"
+            "Igorgawrys\\Social\\": "src/",
+            "Igorgawrys\\Social\\Auth\\": "src/Auth",
+            "Igorgawrys\\Social\\Guard\\": "src/Guard",
+            "Igorgawrys\\Social\\Hashing\\": "src/Hashing",
+            "Igorgawrys\\Social\\Models\\": "src/Models"
         }
     },
     "extra": {
