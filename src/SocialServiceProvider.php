@@ -19,7 +19,7 @@ class SocialServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__ . '/../config/social.php', 'social');
         Auth::extend('social', function ($app) {
             return new SocialGuard(
-                new EloquentSocialUserProvider($app['social-auth'], $config['social'])
+                new EloquentSocialUserProvider($app['social'], $config['model'])
             );
         });
         $this->app->singleton('social-auth', function ($app) {
@@ -29,7 +29,7 @@ class SocialServiceProvider extends ServiceProvider
             return new SocialHasher($hasher);
         });
         Auth::provider('eloquent.social', function ($app, array $config) {
-            return new EloquentSocialUserProvider($app['social-auth'], $config['model']);
+            return new EloquentSocialUserProvider($app['social'], $config['model']);
         });
     }
 
