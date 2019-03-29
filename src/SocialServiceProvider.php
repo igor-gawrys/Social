@@ -10,6 +10,18 @@ use Igorgawrys\Social\Hashing\SocialHasher;
 class SocialServiceProvider extends ServiceProvider
 {
     /**
+     * Bootstrap services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        $this->publishes([
+            __DIR__ . '/../config/social.php' => config_path('social.php'),
+        ]);
+    }
+    
+    /**
      * Register services.
      *
      * @return void
@@ -31,17 +43,5 @@ class SocialServiceProvider extends ServiceProvider
         Auth::provider('eloquent.social', function ($app, array $config) {
             return new EloquentSocialUserProvider($app['social'], $config['model']);
         });
-    }
-
-    /**
-     * Bootstrap services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        $this->publishes([
-            __DIR__ . '/../config/social.php' => config_path('social.php'),
-        ]);
     }
 }
