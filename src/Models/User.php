@@ -122,4 +122,9 @@ class User extends Authenticatable implements JWTSubject
     {
         return [];
     }
+
+    public function user(){
+        return $this->hasOne('App\User','social_user_id','id');
+    }
+    
 }
