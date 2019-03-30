@@ -60,7 +60,7 @@ To register authentication guard.
 
 #### Publish config file (optional)
 ```bash
-php artisan vendor:publish --provider="MrShan0\WordpressAuth\WordpressAuthServiceProvider"
+php artisan vendor:publish --provider="Igorgawrys\Social\SocialServiceProvider"
 ```
 
 It will publish config file (`config/social.php`) where you can define your own connection type e.g `social`. Make sure to fill `prefix` in `config/database.php` for `` prefix in your tables if you're using prefix in wordpress tabels.
