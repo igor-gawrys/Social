@@ -40,7 +40,7 @@ class User extends Authenticatable implements JWTSubject
     {
         parent::__construct($attributes);
         // Set connection from config
-        $this->setConnection(config('social.connection', 'mysql'));
+        $this->setConnection(config('social.default', 'social-mysql'));
     }
 
     /**
