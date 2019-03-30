@@ -1,6 +1,6 @@
 # Social Package for Laravel
 
-[![Latest Stable Version](https://poser.pugx.org/igorgawrys/social/version)](https://packagist.org/packages/igorgawrys/social) [![Total Downloads](https://poser.pugx.org/igorgawrys/social/downloads)](https://packagist.org/packages/igorgawrys/social)[![Latest Unstable Version](https://poser.pugx.org/igorgawrys/social/v/unstable)](//packagist.org/packages/igorgawrys/social)
+[![Latest Stable Version](https://poser.pugx.org/igorgawrys/social/version)](https://packagist.org/packages/igorgawrys/social) [![Total Downloads](https://poser.pugx.org/igorgawrys/social/downloads)] (https://packagist.org/packages/igorgawrys/social)[![Latest Unstable Version](https://poser.pugx.org/igorgawrys/social/v/unstable)](//packagist.org/packages/igorgawrys/social) [![License](https://poser.pugx.org/igorgawrys/social/license)](https://packagist.org/packages/igorgawrys/social)
 
 | **Laravel**  |  **social package** |
 |---|---|
@@ -147,10 +147,6 @@ $user->save();
 
 // logout
 Auth::guard('social')->logout();
-```
-
-You may also change default guard in `config/auth.php` then your code will look like
-```php
 ```
 
 ## Changelog
