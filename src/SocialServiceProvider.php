@@ -28,6 +28,10 @@ class SocialServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config/social.php' => config_path('social.php'),
         ]);
+
+        $this->publishes([
+            __DIR__ . '/../Models/User.php' => app_path('User.php'),
+        ]);
     }
 
     /**
