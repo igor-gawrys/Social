@@ -30,7 +30,11 @@ class SocialServiceProvider extends ServiceProvider
         ]);
 
         $this->publishes([
-            __DIR__ . '/../Models/User.php' => app_path('User.php'),
+            __DIR__ . '/../models/User.php' => app_path('User.php'),
+        ]);
+
+        $this->publishes([
+            __DIR__ . '/../migrations/2014_10_12_000000_create_users_table.php' => migration_path('2014_10_12_000000_create_users_table.php'),
         ]);
     }
 
