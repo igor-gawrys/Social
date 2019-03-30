@@ -1,6 +1,6 @@
 # Social Package for Laravel
 
-[![Latest Stable Version](https://poser.pugx.org/igorgawrys/social/v/stable)](https://packagist.org/packages/igorgawrys/social)[![Total Downloads](https://poser.pugx.org/igorgawrys/social/downloads)](https://packagist.org/packages/igorgawrys/social)[![Latest Unstable Version](https://poser.pugx.org/igorgawrys/social/v/unstable)](https://packagist.org/packages/igorgawrys/social)[![License](https://poser.pugx.org/igorgawrys/social/license)](https://packagist.org/packages/igorgawrys/social)
+[![Latest Stable Version](https://poser.pugx.org/igorgawrys/social/v/stable) ](https://packagist.org/packages/igorgawrys/social)[![Total Downloads](https://poser.pugx.org/igorgawrys/social/downloads) ](https://packagist.org/packages/igorgawrys/social)[![Latest Unstable Version](https://poser.pugx.org/igorgawrys/social/v/unstable) ](https://packagist.org/packages/igorgawrys/social)[![License](https://poser.pugx.org/igorgawrys/social/license) ](https://packagist.org/packages/igorgawrys/social)
 
 | **Laravel**  |  **social package** |
 |---|---|
