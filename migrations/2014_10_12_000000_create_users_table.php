@@ -16,6 +16,7 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('social_user_id');
+            // Your custom property for relationship
             $table->timestamps();
         });
     }
